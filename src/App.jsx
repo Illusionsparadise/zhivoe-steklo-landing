@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-[#faf8f5] text-gray-900 font-sans">
       <div className="max-w-6xl mx-auto px-6 py-16">
 
         {/* HERO */}
-        <section className="grid md:grid-cols-2 gap-10 items-center mb-20">
+        <section className="grid md:grid-cols-2 gap-10 items-center mb-20 bg-white rounded-3xl p-10 shadow-sm">
           <div>
             <h1 className="text-5xl font-light mb-6">
               Свадебный очаг, который сохраняет момент навсегда
@@ -29,24 +29,26 @@ export default function App() {
         </section>
 
         {/* VIDEO */}
-        <section className="mb-20">
+        <section className="mb-20 bg-[#f5f1eb] rounded-3xl p-10">
           <h2 className="text-3xl font-light mb-4">Посмотрите, как это выглядит вживую</h2>
           <p className="text-gray-600 mb-6">Видео показывает фактуру стекла и эффект при горении</p>
 
           <div className="aspect-video rounded-2xl overflow-hidden shadow">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/tK0IEpNU8OU"
-              title="Видеообзор набора Живое стекло"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <video
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/images/candle1.jpg"
+            >
+              <source src="/video/product-video.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
         </section>
 
         {/* BENEFITS */}
-        <section className="mb-20 grid md:grid-cols-2 gap-6">
+        <section className="mb-20 grid md:grid-cols-2 gap-6 bg-white rounded-3xl p-10 shadow-sm">
           <div className="p-6 border rounded-2xl">
             <h3 className="font-medium mb-2">Безопасная доставка</h3>
             <p className="text-gray-600 text-sm">Многоуровневая упаковка — свечи доезжают целыми в любую точку страны</p>
@@ -59,7 +61,7 @@ export default function App() {
         </section>
 
         {/* REVIEWS */}
-        <section className="mb-20">
+        <section className="mb-20 bg-[#f8f5f0] rounded-3xl p-10">
           <h2 className="text-3xl font-light mb-8 text-center">Отзывы невест</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 border rounded-2xl shadow-sm">
@@ -78,7 +80,7 @@ export default function App() {
         </section>
 
         {/* CONTACT */}
-        <section id="order" className="text-center">
+        <section id="order" className="text-center bg-white rounded-3xl p-10 shadow-sm">
           <h2 className="text-3xl font-light mb-4">Оформить заказ</h2>
 
           <div className="flex flex-col items-center gap-4">
