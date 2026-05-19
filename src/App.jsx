@@ -51,6 +51,31 @@ export default function App() {
           </div>
         </section>
 
+        <section className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-[0_8px_30px_rgba(0,0,0,0.06)]">
+          <h2 className="text-3xl font-light text-center mb-6">Почему выбирают «Живое стекло»</h2>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="p-6 border border-[#e8e4de] rounded-2xl">Уникальная текстура crushed glass effect</div>
+            <div className="p-6 border border-[#e8e4de] rounded-2xl">Безопасная многоуровневая упаковка</div>
+            <div className="p-6 border border-[#e8e4de] rounded-2xl">Дополнительный воск и фитиль в комплекте</div>
+          </div>
+        </section>
+
+        <section className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-[0_8px_30px_rgba(0,0,0,0.06)]">
+          <h2 className="text-3xl font-light text-center mb-6">Доставка</h2>
+          <p className="text-center text-gray-600">Подберем удобный способ доставки: СДЭК, Почта России, Ozon, 5Post и другие сервисы по всей России.</p>
+        </section>
+
+        <section id="order" className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-[0_8px_30px_rgba(0,0,0,0.06)] text-center space-y-6">
+          <h2 className="text-3xl font-light">Оформить заказ</h2>
+          <p className="text-gray-600">Оставьте заявку или напишите напрямую в VK / Telegram</p>
+          <a href="mailto:irenpetkoglo@yandex.ru" className="inline-block bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-2xl">Заказать набор</a>
+          <div className="flex justify-center gap-4 text-sm">
+            <a href="https://vk.com/ip_candles" target="_blank" rel="noopener noreferrer" className="underline">Написать в VK</a>
+            <a href="https://t.me/irinapetkoglo" target="_blank" rel="noopener noreferrer" className="underline">Telegram</a>
+            <a href="mailto:irenpetkoglo@yandex.ru" className="underline">irenpetkoglo@yandex.ru</a>
+          </div>
+        </section>
+
         <footer className="border-t border-[#e8e4de] pt-10 text-sm text-gray-500 space-y-3">
           <p>Самозанятая: Петкогло Ирина Федоровна</p>
           <p>ИНН: 402806174487</p>
