@@ -1,5 +1,35 @@
+import React from 'react';
 
-  {/* VIDEO */}
+export default function App() {
+  return (
+    <div className="min-h-screen bg-[#f7f4ef] bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.7),_transparent_35%),linear-gradient(135deg,_rgba(255,255,255,0.45)_0%,_rgba(240,240,240,0.15)_100%)] text-gray-900 font-sans">
+      <div className="max-w-6xl mx-auto px-6 py-16">
+
+        {/* HERO */}
+        <section className="grid md:grid-cols-2 gap-10 items-center mb-20 bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-white/60">
+          <div>
+            <h1 className="text-5xl font-light tracking-tight mb-6">
+              Семейный очаг ручной работы, который станет частью вашей истории
+            </h1>
+            <p className="text-gray-600 mb-8">
+              Набор свечей «Живое стекло» — эстетика, которая остается с вами на годы. Стеклянная текстура, сформированная вручную, напоминает природные кристаллы, заключающие в себе мягкое пламя.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <a href="#order" target="_blank" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white px-6 py-3 rounded-xl">Заказать комплект</a>
+              <a href="#order" target="_blank" className="border px-6 py-3 rounded-xl">Заказать отдельно</a>
+              <a href="#order" target="_blank" className="border px-6 py-3 rounded-xl">2 родительские свечи</a>
+              <a href="https://vk.com/ip_candles" target="_blank" rel="noopener noreferrer" className="bg-gray-100 px-6 py-3 rounded-xl">Заказать свой аромат</a>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            <img src="/images/candle1.jpg" className="rounded-2xl shadow" />
+            <img src="/images/candle2.jpg" className="rounded-2xl shadow" />
+          </div>
+        </section>
+
+        {/* VIDEO */}
         <section className="mb-20 bg-[#f5f1eb] rounded-3xl p-10">
           <h2 className="text-3xl font-light mb-4">Видеообзор набора «Живое стекло»</h2>
           <p className="text-gray-600 mb-6">Созданная вручную из стеклянной крошки и залитая натуральным пальмовым воском, она образует уникальный кристаллический узор на поверхности — словно застывший лед, в котором живёт огонь. Каждая свеча неповторима.</p>
