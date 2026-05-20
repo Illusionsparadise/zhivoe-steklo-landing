@@ -1,159 +1,172 @@
-import React from 'react';
+import React from "react";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#f7f4ef] bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.7),_transparent_35%),linear-gradient(135deg,_rgba(255,255,255,0.45)_0%,_rgba(240,240,240,0.15)_100%)] text-gray-900 font-sans">
-      <div className="max-w-6xl mx-auto px-6 py-16">
+    <div className="min-h-screen bg-[#f3efe8] text-gray-900 relative overflow-x-hidden">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.95),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.45),transparent_30%),linear-gradient(135deg,rgba(255,255,255,0.55)_0%,rgba(220,220,220,0.12)_100%)]" />
 
-        {/* HERO */}
-        <section className="grid md:grid-cols-2 gap-10 items-center mb-20 bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-white/60">
-          <div>
-            <h1 className="text-5xl font-light tracking-tight mb-6">
-              Семейный очаг ручной работы, который станет частью вашей истории
-            </h1>
-            <p className="text-gray-600 mb-8">
-              Набор свечей «Живое стекло» — эстетика, которая остается с вами на годы. Стеклянная текстура, сформированная вручную, напоминает природные кристаллы, заключающие в себе мягкое пламя.
-            </p>
+        <div className="absolute top-0 left-[-10%] w-[500px] h-[500px] rounded-full bg-white/30 blur-3xl" />
+        <div className="absolute bottom-0 right-[-10%] w-[500px] h-[500px] rounded-full bg-white/20 blur-3xl" />
 
-            <div className="flex flex-wrap gap-4">
-              <a href="#order" target="_blank" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white px-6 py-3 rounded-xl">Заказать комплект</a>
-              <a href="#order" target="_blank" className="border px-6 py-3 rounded-xl">Заказать отдельно</a>
-              <a href="#order" target="_blank" className="border px-6 py-3 rounded-xl">2 родительские свечи</a>
-              <a href="https://vk.com/ip_candles" target="_blank" rel="noopener noreferrer" className="bg-gray-100 px-6 py-3 rounded-xl">Заказать свой аромат</a>
-            </div>
-          </div>
+        <div className="absolute inset-0 opacity-[0.07] bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.9)_20%,transparent_40%,rgba(220,220,220,0.6)_60%,transparent_80%)] bg-[length:500px_500px]" />
 
-          <div className="grid gap-4">
-            <img src="/images/candle1.jpg" className="rounded-2xl shadow" />
-            <img src="/images/candle2.jpg" className="rounded-2xl shadow" />
-          </div>
-        </section>
+        <div className="absolute inset-0 opacity-[0.05] bg-[url('https://www.transparenttextures.com/patterns/crissxcross.png')] mix-blend-overlay" />
+      </div>
 
-        {/* VIDEO */}
-        <section className="mb-20 bg-[#f5f1eb] rounded-3xl p-10">
-          <h2 className="text-3xl font-light mb-4">Видеообзор набора «Живое стекло»</h2>
-          <p className="text-gray-600 mb-6">Созданная вручную из стеклянной крошки и залитая натуральным пальмовым воском, она образует уникальный кристаллический узор на поверхности — словно застывший лед, в котором живёт огонь. Каждая свеча неповторима.</p>
+      <main className="relative z-10 max-w-6xl mx-auto px-6 py-10 space-y-16">
+        <section className="text-center space-y-8">
+          <h1 className="text-5xl md:text-6xl font-light tracking-tight">Живое стекло</h1>
+          <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+            Набор свечей «Живое стекло» — эстетика, которая остается с вами на годы.
+            Стеклянная текстура, сформированная вручную, напоминает природные кристаллы,
+            заключающие в себе мягкое пламя.
+          </p>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow max-w-sm mx-auto w-full">
-              <video className="w-full h-full object-cover" controls playsInline preload="metadata" poster="/images/candle1.jpg">
-                <source src="/video/product-video-vertical.mp4" type="video/mp4" />
-                Ваш браузер не поддерживает видео.
-              </video>
-            </div>
+            <img src="/images/candle1.jpg" className="rounded-3xl object-cover w-full" />
+            <img src="/images/candle2.jpg" className="rounded-3xl object-cover w-full" />
+          </div>
+        </section>
 
-            <div className="aspect-video rounded-2xl overflow-hidden shadow">
-              <video className="w-full h-full object-cover" controls playsInline preload="metadata" poster="/images/candle2.jpg">
-                <source src="/video/product-video.mp4" type="video/mp4" />
-                Ваш браузер не поддерживает видео.
-              </video>
+        <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
+          <h2 className="text-3xl font-light text-center mb-4">Видеообзор набора «Живое стекло»</h2>
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+            Созданная вручную из стеклянной крошки и залитая натуральным пальмовым воском, она образует уникальный кристаллический узор на поверхности — словно застывший лед, в котором живёт огонь. Каждая свеча неповторима.
+          </p>
+
+          <div className="space-y-8 max-w-4xl mx-auto">
+            <video
+              controls
+              playsInline
+              className="rounded-2xl w-full shadow-lg"
+              src="/video/product-video.mp4"
+            />
+
+            <div className="flex justify-center">
+              <video
+                controls
+                playsInline
+                className="rounded-2xl w-full max-w-sm shadow-lg"
+                src="/video/product-video-vertical.mp4"
+              />
             </div>
           </div>
         </section>
 
-        {/* BENEFITS */}
-        <section className="mb-20 bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-white/60">
-          <h2 className="text-3xl font-light mb-8 text-center">Почему выбирают «Живое стекло»</h2>
-          <p className="text-center text-gray-600 mb-10">Создано для особенных моментов и красивых воспоминаний</p>
+        <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
+          <h2 className="text-3xl font-light mb-8 text-center">Семейный очаг ручной работы, который станет частью вашей истории</h2>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="relative overflow-hidden">
+            <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
+              <img src="/images/gallery1.jpg" className="snap-center shrink-0 w-[280px] md:w-[340px] aspect-[3/4] object-cover rounded-3xl shadow-lg" />
+              <img src="/images/gallery2.jpg" className="snap-center shrink-0 w-[280px] md:w-[340px] aspect-[3/4] object-cover rounded-3xl shadow-lg" />
+              <img src="/images/gallery3.jpg" className="snap-center shrink-0 w-[280px] md:w-[340px] aspect-[3/4] object-cover rounded-3xl shadow-lg" />
+              <img src="/images/gallery4.jpg" className="snap-center shrink-0 w-[280px] md:w-[340px] aspect-[3/4] object-cover rounded-3xl shadow-lg" />
+              <img src="/images/gallery5.jpg" className="snap-center shrink-0 w-[280px] md:w-[340px] aspect-[3/4] object-cover rounded-3xl shadow-lg" />
+              <img src="/images/gallery6.jpg" className="snap-center shrink-0 w-[280px] md:w-[340px] aspect-[3/4] object-cover rounded-3xl shadow-lg" />
+            </div>
+
+            <p className="text-center text-sm text-gray-400 mt-4">
+              Листайте галерею вправо и влево
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
+          <h2 className="text-3xl font-light text-center mb-2">Почему выбирают «Живое стекло»</h2>
+          <p className="text-center text-gray-500 mb-8">Создано для особенных моментов и красивых воспоминаний</p>
+
+          <div className="grid md:grid-cols-3 gap-6 text-center mb-10">
             <div className="p-6 border border-[#e8e4de] rounded-2xl">
-              <h3 className="font-medium mb-2">Свечи не как у всех</h3>
+              <h3 className="font-medium mb-3">Свечи не как у всех</h3>
               <p className="text-gray-600 text-sm">Эксклюзивный дизайн и уникальная текстура crushed glass effect.</p>
             </div>
+
             <div className="p-6 border border-[#e8e4de] rounded-2xl">
-              <h3 className="font-medium mb-2">Безопасная доставка</h3>
+              <h3 className="font-medium mb-3">Безопасная доставка</h3>
               <p className="text-gray-600 text-sm">Многоуровневая упаковка защищает комплект при доставке по всей стране.</p>
             </div>
+
             <div className="p-6 border border-[#e8e4de] rounded-2xl">
-              <h3 className="font-medium mb-2">Семейная традиция</h3>
+              <h3 className="font-medium mb-3">Семейная традиция</h3>
               <p className="text-gray-600 text-sm">Дополнительный воск и фитиль позволяют использовать очаг снова и снова.</p>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="border border-[#e8e4de] rounded-2xl p-6 text-center">
-              <img src="/images/gallery1.jpg" className="rounded-xl mb-4" />
-              <h3 className="font-medium">Комплект</h3>
-              <p className="text-gray-600 mb-4">от 4800 ₽</p>
-              <a href="#order" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white px-6 py-3 rounded-xl inline-block">Заказать</a>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#e8e4de]">
+              <img src="/images/gallery1.jpg" className="aspect-[3/4] object-cover w-full" />
+              <div className="p-5 text-center space-y-3">
+                <h3 className="font-medium">Комплект свечей</h3>
+                <p className="text-gray-600">от 4800 ₽</p>
+              </div>
             </div>
-            <div className="border border-[#e8e4de] rounded-2xl p-6 text-center">
-              <img src="/images/gallery2.jpg" className="rounded-xl mb-4" />
-              <h3 className="font-medium">Основная свеча</h3>
-              <p className="text-gray-600 mb-4">от 2900 ₽</p>
-              <a href="#order" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white px-6 py-3 rounded-xl inline-block">Заказать</a>
+
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#e8e4de]">
+              <img src="/images/gallery2.jpg" className="aspect-[3/4] object-cover w-full" />
+              <div className="p-5 text-center space-y-3">
+                <h3 className="font-medium">Основная свеча</h3>
+                <p className="text-gray-600">от 2900 ₽</p>
+              </div>
             </div>
-            <div className="border border-[#e8e4de] rounded-2xl p-6 text-center">
-              <img src="/images/candle2.jpg" className="rounded-xl mb-4" />
-              <h3 className="font-medium">2 родительские свечи</h3>
-              <p className="text-gray-600 mb-4">от 2900 ₽</p>
-              <a href="#order" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white px-6 py-3 rounded-xl inline-block">Заказать</a>
+
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#e8e4de]">
+              <img src="/images/gallery3.jpg" className="aspect-[3/4] object-cover w-full" />
+              <div className="p-5 text-center space-y-3">
+                <h3 className="font-medium">2 родительские свечи</h3>
+                <p className="text-gray-600">от 2900 ₽</p>
+              </div>
             </div>
           </div>
 
-          <p className="text-center text-gray-600 mt-8">Можно собрать свой набор под ваш формат торжества</p>
-        </section>
+          <p className="text-center text-gray-600 mb-8">Можно собрать свой набор под ваш формат торжества.</p>
 
-        <section className="mb-20 bg-[#f8f5f0] rounded-3xl p-10">
-          <h2 className="text-3xl font-light mb-8 text-center">Доставка по всей России</h2>
-          <p className="text-center text-gray-600 max-w-3xl mx-auto">
-            Подберем удобный способ доставки именно для вас: СДЭК, Почта России, Ozon, 5Post и другие сервисы. Также возможна интеграция с Ozon и Яндекс Доставкой.
-          </p>
-        </section>
-
-        <section className="mb-20 bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-white/60">
-          <h2 className="text-3xl font-light mb-2 text-center">Семейный очаг ручной работы, который станет частью вашей истории</h2>
-          <p className="text-center text-gray-600 mb-8">Галерея</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="/images/gallery1.jpg" className="aspect-[3/4] object-cover rounded-2xl" />
-            <img src="/images/gallery2.jpg" className="aspect-[3/4] object-cover rounded-2xl" />
-            <img src="/images/gallery3.jpg" className="aspect-[3/4] object-cover rounded-2xl" />
-            <img src="/images/gallery4.jpg" className="aspect-[3/4] object-cover rounded-2xl" />
+          <div className="flex justify-center mb-10">
+            <a
+              href="https://vk.com/ip_candles"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-2xl shadow-lg"
+            >
+              Заказать свой аромат
+            </a>
           </div>
-        </section>
 
-        {/* REVIEWS */}
-        <section className="mb-20 bg-[#f8f5f0] rounded-3xl p-10">
-          <h2 className="text-3xl font-light mb-8 text-center">Отзывы</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 border border-[#e8e4de] rounded-2xl shadow-sm">
-              <p className="text-gray-700 mb-4">«Очень переживала за доставку, но свечи пришли идеально упакованными. Вживую еще красивее, чем на фото.»</p>
-              <span className="text-sm text-gray-500">— Алина</span>
-            </div>
-            <div className="p-6 border border-[#e8e4de] rounded-2xl shadow-sm">
-              <p className="text-gray-700 mb-4">«На фото и видео свадебный очаг смотрелся просто роскошно. Гости спрашивали, где заказывали.»</p>
-              <span className="text-sm text-gray-500">— Мария</span>
-            </div>
-            <div className="p-6 border border-[#e8e4de] rounded-2xl shadow-sm">
-              <p className="text-gray-700 mb-4">«Очень понравилась идея, что свечу можно использовать повторно на годовщины. Это уже семейная традиция.»</p>
-              <span className="text-sm text-gray-500">— Екатерина</span>
-            </div>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="p-6 border border-[#e8e4de] rounded-2xl">Уникальная текстура crushed glass effect</div>
+            <div className="p-6 border border-[#e8e4de] rounded-2xl">Безопасная многоуровневая упаковка</div>
+            <div className="p-6 border border-[#e8e4de] rounded-2xl">Дополнительный воск и фитиль в комплекте</div>
           </div>
         </section>
 
-        {/* CONTACT */}
-        <section id="order" className="text-center bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-white/60">
-          <h2 className="text-3xl font-light mb-4">Оформить заказ</h2>
-          <form action="mailto:irenpetkoglo@yandex.ru" method="post" encType="text/plain" className="max-w-xl mx-auto flex flex-col gap-4 text-left">
-            <input type="text" placeholder="Ваше имя" className="border border-[#ddd7cf] p-3 rounded-xl bg-white/80" />
-            <input type="tel" placeholder="Телефон" className="border border-[#ddd7cf] p-3 rounded-xl bg-white/80" />
-            <input type="email" placeholder="E-mail" className="border border-[#ddd7cf] p-3 rounded-xl bg-white/80" />
-            <textarea placeholder="Комментарий к заказу" className="border border-[#ddd7cf] p-3 rounded-xl min-h-[120px] bg-white/80" />
-            <label className="flex gap-2 text-sm text-gray-600">
-              <input type="checkbox" required /> Согласен(а) на обработку персональных данных
-            </label>
-            <button type="submit" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-2xl">Отправить заявку</button>
-            <p className="text-sm text-gray-500">Если вам неудобно оставлять телефон, можете написать напрямую в группе VK.</p>
-          </form>
-          <div className="flex flex-col items-center gap-4 mt-8">
-            <a href="https://vk.com/ip_candles" target="_blank" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-2xl text-lg">Написать в VK</a>
-            <a href="https://t.me/irinapetkoglo" target="_blank" className="text-xl opacity-70 hover:opacity-100">✈️</a>
-            <a href="mailto:irenpetkoglo@yandex.ru" className="text-gray-600 underline">irenpetkoglo@yandex.ru</a>
+        <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
+          <h2 className="text-3xl font-light text-center mb-6">Доставка</h2>
+          <p className="text-center text-gray-600">Подберем удобный способ доставки: СДЭК, Почта России, Ozon, 5Post и другие сервисы по всей России.</p>
+        </section>
+
+        <section id="order" className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)] text-center space-y-6">
+          <h2 className="text-3xl font-light">Оформить заказ</h2>
+          <p className="text-gray-600">Оставьте заявку или напишите напрямую в VK / Telegram</p>
+          <a href="mailto:irenpetkoglo@yandex.ru" className="inline-block bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-2xl">Заказать набор</a>
+          <div className="flex justify-center gap-4 text-sm">
+            <a href="https://vk.com/ip_candles" target="_blank" rel="noopener noreferrer" className="underline">Написать в VK</a>
+            <a href="https://t.me/irinapetkoglo" target="_blank" rel="noopener noreferrer" className="underline">Telegram</a>
+            <a href="mailto:irenpetkoglo@yandex.ru" className="underline">irenpetkoglo@yandex.ru</a>
           </div>
         </section>
 
-      </div>
+        <footer className="border-t border-[#e8e4de] pt-10 text-sm text-gray-500 space-y-3">
+          <p>Самозанятая: Петкогло Ирина Федоровна</p>
+          <p>ИНН: 402806174487</p>
+          <div className="flex flex-wrap gap-4">
+            <a href="#" className="underline">Публичная оферта</a>
+            <a href="#" className="underline">Политика конфиденциальности</a>
+            <a href="#" className="underline">Пользовательское соглашение</a>
+            <a href="#" className="underline">Реквизиты продавца</a>
+          </div>
+        </footer>
+      </main>
     </div>
-  )
+  );
 }
