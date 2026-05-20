@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="min-h-screen bg-[#f3efe8] text-gray-900 relative overflow-x-hidden">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -146,24 +147,130 @@ export default function App() {
         </section>
 
         <section id="order" className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)] text-center space-y-6">
-          <h2 className="text-3xl font-light">Оформить заказ</h2>
+          <button
+            onClick={() => setIsOpen(true)}
+            className="inline-block bg-gradient-to-r from-gray-900 to-gray-700 text-white px-10 py-5 rounded-2xl text-xl shadow-lg hover:scale-[1.02] transition"
+          >
+            Оформить заказ
+          </button>
+
           <p className="text-gray-600">Оставьте заявку или напишите напрямую в VK / Telegram</p>
-          <a href="mailto:irenpetkoglo@yandex.ru" className="inline-block bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-2xl">Заказать набор</a>
-          <div className="flex justify-center gap-4 text-sm">
+
+          <div className="flex justify-center gap-4 text-sm flex-wrap">
             <a href="https://vk.com/ip_candles" target="_blank" rel="noopener noreferrer" className="underline">Написать в VK</a>
             <a href="https://t.me/irinapetkoglo" target="_blank" rel="noopener noreferrer" className="underline">Telegram</a>
             <a href="mailto:irenpetkoglo@yandex.ru" className="underline">irenpetkoglo@yandex.ru</a>
           </div>
         </section>
 
+        {isOpen && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-[32px] p-8 max-w-xl w-full relative shadow-2xl">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-black text-2xl"
+              >
+                ×
+              </button>
+
+              <h2 className="text-3xl font-light mb-6 text-center">Оформить заказ</h2>
+
+              <form
+                action="https://formsubmit.co/irenpetkoglo@yandex.ru"
+                method="POST"
+                className="space-y-5"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="Новая заявка Живое стекло" />
+
+                <div>
+                  <label className="block text-sm mb-2 text-gray-600">Телефон (по желанию)</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    className="w-full border border-[#e8e4de] rounded-2xl px-4 py-3 outline-none"
+                    placeholder="Ваш номер телефона"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm mb-2 text-gray-600">E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    className="w-full border border-[#e8e4de] rounded-2xl px-4 py-3 outline-none"
+                    placeholder="Ваш e-mail"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm mb-2 text-gray-600">Комментарий</label>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    className="w-full border border-[#e8e4de] rounded-2xl px-4 py-3 outline-none resize-none"
+                    placeholder="Ваши пожелания, дата свадьбы, аромат и т.д."
+                  />
+                </div>
+
+                <label className="flex items-start gap-3 text-sm text-gray-600">
+                  <input type="checkbox" required className="mt-1" />
+                  <span>
+                    Я соглашаюсь на обработку персональных данных и ознакомлен(а) с политикой конфиденциальности.
+                  </span>
+                </label>
+
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-gray-900 to-gray-700 text-white py-4 rounded-2xl shadow-lg"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        )}
+
         <footer className="border-t border-[#e8e4de] pt-10 text-sm text-gray-500 space-y-3">
           <p>Самозанятая: Петкогло Ирина Федоровна</p>
           <p>ИНН: 402806174487</p>
           <div className="flex flex-wrap gap-4">
-            <a href="#" className="underline">Публичная оферта</a>
-            <a href="#" className="underline">Политика конфиденциальности</a>
-            <a href="#" className="underline">Пользовательское соглашение</a>
-            <a href="#" className="underline">Реквизиты продавца</a>
+            <a
+              href="/docs/oferta.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-black transition"
+            >
+              Публичная оферта
+            </a>
+
+            <a
+              href="/docs/privacy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-black transition"
+            >
+              Политика конфиденциальности
+            </a>
+
+            <a
+              href="/docs/agreement.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-black transition"
+            >
+              Пользовательское соглашение
+            </a>
+
+            <a
+              href="/docs/details.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-black transition"
+            >
+              Реквизиты продавца
+            </a>
           </div>
         </footer>
       </main>
