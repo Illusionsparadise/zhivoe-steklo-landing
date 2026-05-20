@@ -49,7 +49,7 @@ export default function App() {
                 controls
                 playsInline
                 className="rounded-2xl w-full max-w-sm shadow-lg"
-                src="/video/product-video-vertical-2.mp4"
+                src="/video/product-video-vertical.mp4"
               />
             </div>
           </div>
@@ -182,6 +182,7 @@ export default function App() {
               >
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="Новая заявка Живое стекло" />
+                <input type="hidden" name="_next" value="https://zhivoe-steklo-landing.vercel.app" />
 
                 <div>
                   <label className="block text-sm mb-2 text-gray-600">Телефон (по желанию)</label>
@@ -217,7 +218,15 @@ export default function App() {
                 <label className="flex items-start gap-3 text-sm text-gray-600">
                   <input type="checkbox" required className="mt-1" />
                   <span>
-                    Я соглашаюсь на обработку персональных данных и ознакомлен(а) с политикой конфиденциальности.
+                    Я соглашаюсь на обработку персональных данных и ознакомлен(а) с
+                    <a
+                      href="/docs/privacy.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline ml-1"
+                    >
+                      политикой конфиденциальности
+                    </a>
                   </span>
                 </label>
 
