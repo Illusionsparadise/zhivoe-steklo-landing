@@ -49,7 +49,7 @@ export default function App() {
                 controls
                 playsInline
                 className="rounded-2xl w-full max-w-sm shadow-lg"
-                src="/video/product-video-vertical.mp4"
+                src="/video/product-video-vertical-2.mp4"
               />
             </div>
           </div>
