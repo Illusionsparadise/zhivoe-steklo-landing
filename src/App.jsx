@@ -25,9 +25,10 @@ export default function App() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
-  <div className="rounded-3xl h-[420px] bg-[#e7e0d7]" />
-  <div className="rounded-3xl h-[420px] bg-[#e7e0d7]" />
-</div>
+            <img src="/images/candle1.jpg" className="rounded-3xl object-cover w-full" />
+            <img src="/images/candle2.jpg" className="rounded-3xl object-cover w-full" />
+          </div>
+        </section>
 
         <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
           <h2 className="text-3xl font-light text-center mb-4">Видеообзор набора «Живое стекло»</h2>
