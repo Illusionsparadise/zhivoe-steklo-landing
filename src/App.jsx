@@ -31,16 +31,21 @@ export default function App() {
         </section>
 
         <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
-          <h2 className="text-3xl font-light text-center mb-4">Видеообзор набора «Живое стекло»</h2>
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Созданная вручную из стеклянной крошки и залитая натуральным пальмовым воском, она образует уникальный кристаллический узор на поверхности — словно застывший лед, в котором живёт огонь. Каждая свеча неповторима.
-          </p>
+  <h2 className="text-3xl font-light text-center mb-4">
+    Видеообзор набора «Живое стекло»
+  </h2>
 
-         <div className="space-y-8 max-w-4xl mx-auto">
-  <div className="bg-[#ebe6df] rounded-2xl p-10 text-center text-gray-500">
-    Видео временно обновляется
+  <p className="text-center text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+    Созданная вручную из стеклянной крошки и залитая натуральным пальмовым воском,
+    она образует уникальный кристаллический узор на поверхности — словно застывший лед,
+    в котором живёт огонь. Каждая свеча неповторима.
+  </p>
+
+  <div className="space-y-8 max-w-4xl mx-auto">
+    <div className="bg-[#ebe6df] rounded-2xl p-10 text-center text-gray-500">
+      Видео временно обновляется
+    </div>
   </div>
-</div>
 </section>
 
         <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
