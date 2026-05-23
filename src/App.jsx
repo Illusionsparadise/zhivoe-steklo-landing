@@ -42,10 +42,22 @@ export default function App() {
   </p>
 
   <div className="space-y-8 max-w-4xl mx-auto">
-    <div className="bg-[#ebe6df] rounded-2xl p-10 text-center text-gray-500">
-      Видео временно обновляется
-    </div>
-  </div>
+            <video
+              controls
+              playsInline
+              className="rounded-2xl w-full shadow-lg"
+              src="/video/product-video.mp4"
+            />
+
+            <div className="flex justify-center">
+              <video
+                controls
+                playsInline
+                className="rounded-2xl w-full max-w-sm shadow-lg"
+                src="/video/product-video-vertical-2.mp4"
+              />
+            </div>
+          </div>
 </section>
 
         <section className="bg-white/70 backdrop-blur-xl rounded-[32px] p-8 border border-white/40 shadow-[0_10px_40px_rgba(180,180,180,0.18)]">
